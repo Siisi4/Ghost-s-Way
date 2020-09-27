@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Laby.unity
     guid: 834b232b3fde244469219d9fb146c3e0
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 4a79e52fcb0b1af41a5ee71dc1890e26
   m_configObjects: {}
