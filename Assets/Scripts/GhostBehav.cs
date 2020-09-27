@@ -10,6 +10,7 @@ public class GhostBehav : MonoBehaviour
 
     public GameObject subtitle;
     public Transform BotDirection;
+    public GameObject ghost;
 
     void Start()
     {
@@ -43,6 +44,12 @@ public class GhostBehav : MonoBehaviour
             subtitle.SetActive(true);
             
         }
+
+        if (other.CompareTag("destination"))
+        {
+            Destroy(ghost);
+        }
+
     }
 
 }

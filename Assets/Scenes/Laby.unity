@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You''re lost here forever !
+  m_text: 'You''re lost here for ever !
 
     You will never find your way ...'
   m_isRightToLeft: 0
@@ -840,6 +840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subtitle: {fileID: 1661778273}
   BotDirection: {fileID: 872684158}
+  ghost: {fileID: 574499223}
 --- !u!195 &574499229
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1098,9 +1099,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 872684158}
+  - component: {fileID: 872684159}
   m_Layer: 0
   m_Name: destination ghost
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1113,12 +1115,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872684157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 386.98, y: 1.36, z: 149.36}
+  m_LocalPosition: {x: 386.98, y: 1.36, z: 149.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &872684159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872684157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6151123, y: 1, z: 1.0727692}
+  m_Center: {x: 0.071258545, y: 0, z: -0.036384583}
 --- !u!1 &904070320
 GameObject:
   m_ObjectHideFlags: 0
