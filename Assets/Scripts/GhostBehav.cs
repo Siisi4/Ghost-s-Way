@@ -9,6 +9,7 @@ public class GhostBehav : MonoBehaviour
 
 
     public GameObject subtitle;
+    public Transform BotDirection;
 
     void Start()
     {
@@ -18,9 +19,20 @@ public class GhostBehav : MonoBehaviour
 
     void Update()
     {
+        
+        // joueur appuie sur E
         if (Input.GetKeyDown(KeyCode.E))
         {
+             // les sous-titres disparaissent
+
             subtitle.SetActive(false);
+
+            // bot navmesh agent s'active
+
+            NavMeshAgent agent = GetComponent<NavMeshAgent>();
+            agent.destination = BotDirection.position;
+
+
         }
     }
 
@@ -29,6 +41,7 @@ public class GhostBehav : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             subtitle.SetActive(true);
+            
         }
     }
 
