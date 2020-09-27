@@ -203,6 +203,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TORCHE joueur
       objectReference: {fileID: 0}
+    - target: {fileID: 7628449544769481927, guid: 2298ace622334784da0bd1a9cfe2d593,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2298ace622334784da0bd1a9cfe2d593, type: 3}
 --- !u!1 &212688298
@@ -559,6 +564,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &788756082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7628449544769481927, guid: 2298ace622334784da0bd1a9cfe2d593,
+    type: 3}
+  m_PrefabInstance: {fileID: 3783772520851059331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &788756084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788756082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf6f4599b0ad74e8af093c23b2be80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torche: {fileID: 788756082}
+  torchej: {fileID: 1272416677}
+--- !u!136 &788756085
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788756082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.8515625
+  m_Height: 8.963549
+  m_Direction: 1
+  m_Center: {x: -0.041503906, y: -1.1854732, z: -1.5252686}
 --- !u!1 &947764806
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +691,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1272416677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7628449544769481927, guid: 2298ace622334784da0bd1a9cfe2d593,
+    type: 3}
+  m_PrefabInstance: {fileID: 205051017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1376416733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4138088248260120598, guid: a40ba33c63249fb4a96b6777ecb889bb,
@@ -984,6 +1029,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 383.9
@@ -1026,6 +1075,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -1174,6 +1227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TORCHE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628449544769481927, guid: 2298ace622334784da0bd1a9cfe2d593,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2298ace622334784da0bd1a9cfe2d593, type: 3}
