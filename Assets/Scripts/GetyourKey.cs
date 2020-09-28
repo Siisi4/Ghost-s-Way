@@ -12,7 +12,7 @@ public class GetyourKey : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.name == "player"){
-            keyCount += 2;
+            keyCount += 1;
             Destroy(gameObject);
             canvas.SetActive(true);
         }
